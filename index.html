@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rick & Morty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <img class="logo" src="images/Face.png" />
+    <div class="intro_section">
+        <div class="intro">
+            <div class="title">
+                Is this the first part of some magic trick?
+            </div>
+            <div class="subtitle">
+                "Uh, here's something that's never happened before: I'm a pickle."
+            </div>
+      </div>
+    </div>
+    <div class="main_section">
+      <div class="container">
+        <div id="characters_grid"></div>
+        <div class="pagination">
+            <div class="pagination_btn previous" onclick="previousPage()">
+              <div class="arrow revert"></div>
+            </div>
+            <div class="pagination_btn next" onclick="nextPage()">
+              <div class="arrow"></div>
+            </div>
+            <div id="pagination_info"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-main">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <div class="modal_main_area">
+            <img src="" alt="" class="modal_main_img">
+            <div class="modal_main_title"></div>
+            <div class="modal_main_status"></div>
+          </div>
+          <div class="modal_secondary_area">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
